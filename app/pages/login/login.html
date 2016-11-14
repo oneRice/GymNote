@@ -1,3 +1,9 @@
 <StackLayout>
+    <TextField #email hint="Email Address" keyboardType="email" [(ngModel)]="user.email"
+    autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField #password hint="Password" secure="true" [(ngModel)]="user.password"></TextField>
+
     <Button text="login" (tap)="login()"></Button>
+    <label>{{user.email}}</label>
+    <label>{{user.password}}</label>
 </StackLayout>
